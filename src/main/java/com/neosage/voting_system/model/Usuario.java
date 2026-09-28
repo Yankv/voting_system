@@ -23,8 +23,8 @@ public class Usuario {
     @Column(nullable = false, unique = true, length = 50)
     private String username;
 
-    @Column(name = "password_hash", nullable = false, length = 100)
-    private String passwordHash;
+    @Column(name = "password", nullable = false, length = 100)
+    private String password;
 
     @Column(nullable = false)
     private boolean activo = true;

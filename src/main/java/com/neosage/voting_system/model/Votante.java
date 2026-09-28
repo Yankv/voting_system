@@ -28,7 +28,16 @@ public class Votante {
     private String cedula;
 
     @Column(length = 150)
-    private String nombre;
+    private String primerNombre;
+
+    @Column(length = 150, nullable = true)
+    private String segundoNombre;
+
+    @Column(length = 150)
+    private String primerApellido;
+
+    @Column(length = 150, nullable = true)
+    private String segundoApellido;
 
     @Column(name = "ha_votado", nullable = false)
     private boolean haVotado;
