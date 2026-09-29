@@ -10,15 +10,14 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.neosage.voting_system.dto.request.CrearCandidatoRequest;
 import com.neosage.voting_system.dto.request.RegistrarVotoRequest;
 import com.neosage.voting_system.dto.request.ValidarCedulaRequest;
+import com.neosage.voting_system.dto.response.ObtenerCandidatoResponse;
 import com.neosage.voting_system.dto.response.RegistrarVotoResponse;
 import com.neosage.voting_system.dto.response.ValidarCedulaResponse;
-import com.neosage.voting_system.dto.response.ObtenerCandidatoResponse;
+import com.neosage.voting_system.exception.TokenInvalidoException;
 import com.neosage.voting_system.service.CandidatoService;
 import com.neosage.voting_system.service.VotacionService;
-import com.neosage.voting_system.exception.TokenInvalidoException;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
