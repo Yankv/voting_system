@@ -49,7 +49,7 @@ public class AdminController {
         return ResponseEntity.ok(adminService.cerrarVotacion());
     }
 
-    @PostMapping("/crear")
+    @PostMapping("/crear-candidato")
     public boolean crearCandidato(@RequestBody CrearCandidatoRequest request) {
         return candidatoService.crearCandidato(request);
     }
