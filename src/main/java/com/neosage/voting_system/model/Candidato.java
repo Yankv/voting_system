@@ -22,8 +22,17 @@ public class Candidato {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
  
-    @Column(nullable = false, length = 150)
-    private String nombre;
+    @Column(length = 150)
+    private String primerNombre;
+
+    @Column(length = 150, nullable = true)
+    private String segundoNombre;
+
+    @Column(length = 150)
+    private String primerApellido;
+
+    @Column(length = 150, nullable = true)
+    private String segundoApellido;
  
     @Column(name = "numero_tarjeton", nullable = false, unique = true)
     private Integer numeroTarjeton;
